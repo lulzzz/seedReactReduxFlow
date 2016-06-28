@@ -1,0 +1,9 @@
+# Compiled code
+dist
+
+# Dependency directories
+node_modules
+
+# Served dependencies
+public/react
+public/react-dom
