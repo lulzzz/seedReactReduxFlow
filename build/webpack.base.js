@@ -1,4 +1,5 @@
 var path = require('path')
+var config = require('../config')
 var autoprefixer = require('autoprefixer')
 var root = path.resolve(__dirname, '../')
 var browser_support = ['last 2 versions']
@@ -8,15 +9,16 @@ module.exports = {
     app: ['./src/css/main.scss', './src/main.js']
   } ,
   output: {
-    path: path.resolve(root, './public/dist'),
+    path: config.build.assetsRoot,
     filename: '[name].js',
-    publicPath: '/dist/'
+    publicPath: config.build.assetsPublicPath,
   },
   resolve: {
     extensions: ['', '.js', '.css', '.scss'],
     fallback: [path.join(root, './node_modules')],
     alias: {
       'src': path.resolve(root, './src'),
+      'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(root, './src/components')
     }
   },
@@ -48,7 +50,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: '[name]-[hash:7].[ext]'
+          name: path.join(config.build.assetsSubDirectory, '[name]-[hash:7].[ext]')
         }
       }
     ]
