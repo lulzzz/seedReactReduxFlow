@@ -1,0 +1,310 @@
+
+$hero-bg: #000000;
+$nav-bg: purple;
+$page-margin-bottom: 2rem !default;
+$page-paragraph-margin: 2rem !default;
+$horizontal-split-padding-x-sm: 0rem !default;
+$horizontal-split-padding-x-md: 2rem !default;
+$horizontal-split-padding-x-lg: 3rem !default;
+
+
+@mixin font-size($sizeValue: 1.6) {
+  	font-size: ($sizeValue * 10) + px; /* Fallback for IE8 */
+  	font-size: $sizeValue + rem;
+}
+
+.btn {
+	border-color: purple;
+	background-color: white;
+	color: purple;
+	&:hover, &:focus, &:active, &:focus:active, .active {
+		color: white;
+		background-color: purple;
+		border-color: purple;
+		background-image: none;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+
+
+.page { 
+
+	section {
+		margin-top: 3%;
+	}
+
+	p {
+    	margin-bottom: $page-margin-bottom ;
+    	&:last-child { margin-bottom: 0; }
+  	}
+
+	h3, h4 {
+  		line-height: 1.5;
+	}
+
+	.navbar {
+
+		margin-bottom: 0;
+
+		.navbar-brand {
+			img {
+				max-height:100%;
+				width: auto;
+			}
+		}
+
+		li {
+			margin: 0 10px 0 10px;
+		}
+
+		.brandName {
+			@include font-size(3);
+		}
+
+		.border {
+			border: 1px solid grey;
+			border-radius: 30%;
+		}
+	}
+
+
+	div.hero {
+
+		background-color: $hero-bg;
+	  	background-size: cover;
+	  	color: white;
+
+	  	margin-bottom:5%;
+
+	  	background-repeat: no-repeat;
+	    background-position: center center ; 
+
+		h1 { 
+			text-align: center;
+			margin-bottom: 1.5rem; 
+		}
+
+		p {
+			text-align: center;
+			margin: 0 auto 3rem auto;
+		}
+
+		.btn {
+			border-color: white;
+			background-color: transparent;
+			color: white;
+			&:hover, &:focus, &:active, &:focus:active, .active {
+	    		box-shadow: 0 0 10px white;
+	    		border-color: white;
+				background-color: transparent;
+				color: white;
+	    	}
+		}
+	}
+
+
+	.feedbacks, .doctors {
+
+		img.photo {
+			border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			height: 100px;
+			width: auto;
+			float:left;
+			margin-right: 10px;
+
+		}
+
+		.quote {
+			background: darken(#f9f9f9, 1%);
+			border-left: 10px solid #ccc;
+		  	margin: 1.5em 10px;
+		  	padding: 0.5em 10px;
+		  	quotes: "\201C""\201D""\2018""\2019";
+		  	line-height: 1.8em;
+
+		  	&:before {
+		  		color: #ccc;
+		  		content: open-quote;
+		  		font-size: 4em;
+		  		line-height: 0.1em;
+		  		margin-right: 0.25em;
+		  		vertical-align: -0.4em;
+			}
+	 
+			&:after {
+				color: #ccc; 
+	    		content: close-quote;
+				font-size: 4em;
+		  		line-height: 0.1em;
+		  		margin-left: 0.25em;
+		  		vertical-align: -0.4em;
+			}
+		}
+
+		p, h4 {
+	  		display: inline;
+		}
+	}
+
+	.feedbacks {
+		padding: 5%;
+
+		img.star {
+			height:3%;
+			width: auto;
+		}
+	}
+
+	.doctors {
+		padding: 1% 5% 1% 5%;
+
+		h1 {
+			text-align: center;
+			margin-bottom: 10%;
+			color: purple;
+		}
+
+		.btn-doc {
+			margin-top: 10%;
+		}
+
+		.doctor-title {
+			margin-bottom: 10px;
+		}
+	}
+
+	footer {
+
+	  	margin-top: 5%;
+	  	margin-bottom: 0;
+	  	background-color: rgba(silver, 0.4);
+	  	font-size: 0.8rem;
+	  	a, a:hover, a:active, a:visited, a:link { color: white; text-decoration: none; }
+
+	  	img.left {
+			width: 15%;
+			height: auto;
+			margin-left: 32.5%;
+			margin-right: 5%;
+		}
+
+		img.right {
+			width: 15%;
+			height: auto;
+		}
+
+	  	.icons-div {
+	  		float:none;
+	  		margin:0 auto;
+
+	  		a {
+	  			padding: 25px 0;
+	  		}
+	  	}
+
+		.social-icon { 
+	  		font-size: 1.5rem;
+		}
+
+
+		.twitter-icon i.fa-stack-2x { color: #55acee; }
+		.facebook-icon i.fa-stack-2x { color: #3b5998; }
+		.github-icon i.fa-stack-2x { color: #000; }
+		.linkedin-square-icon i.fa-stack-2x { color: #0077b5; }
+		.google-plus-icon i.fa-stack-2x { color: #d34836; }
+	}
+
+
+	.press {
+		margin-top: 7%;
+		margin-bottom: 7%;
+
+		ul.image-list {
+		  	display: flex;
+		  	flex-wrap: wrap;
+		  	align-items: center;
+		  	&.centered { justify-content: center; }
+		}
+
+
+		li.image-list-item {
+		  	padding: 0rem 3rem;
+		  	img { 
+		  		height: 10%;
+		  		width: auto; 
+		  	}
+		}
+
+	}
+
+
+	h1.grid-title {
+		text-align:center;
+		margin-bottom: 5%;
+
+		.green{
+			color: rgba(green, 0.8);
+			margin-right: 2%;
+		}
+
+		.purple {
+			color: rgba(purple, 0.8);
+		}
+	}
+
+
+	.grid {
+		
+	}
+
+	.thumb {
+		margin-bottom: 8%;
+
+		.btn-xsm {
+	    	padding: 14px 20px;
+	    	font-size: 18px;
+	    	border-radius: 8px;
+		}
+
+		.thumbnail {
+			width:100%;
+			height:auto;
+		
+			h2 { 
+	   			position: absolute; 
+	   			top: 200px; 
+	   			left: 0; 
+	   			width: 100%; 
+			}
+		}
+
+		.caption {
+			p: {
+				margin-top: 10%;
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

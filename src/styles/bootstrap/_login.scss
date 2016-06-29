@@ -1,0 +1,151 @@
+
+$btn-padding: 3%;
+$color-sign-in: #35E2C4;
+$color-sign-up: purple;
+$color-fb: #3B5999;
+
+@mixin font-size($sizeValue: 1.6) {
+  	font-size: ($sizeValue * 10) + px; /* Fallback for IE8 */
+  	font-size: $sizeValue + rem;
+}
+
+
+@mixin btn-color($color, $type:normal) {
+	@if $type == 'normal' {
+
+		border-color: $color;
+		background-color: $color;
+		color: white;
+		&:hover, &:focus, &:active, &:focus:active, .active {
+    		color: white;
+    		background-color: $color;
+    		border-color: $color;
+    		background-image: none;
+  			outline: 0;
+  			box-shadow: none;
+    	}
+
+	} @else {
+
+		border-color: $color;
+		background-color: white;
+		color: $color;
+		&:hover, &:focus, &:active, &:focus:active, .active {
+    		color: white;
+    		background-color: $color;
+    		border-color: $color;
+    		background-image: none;
+  			outline: 0;
+  			box-shadow: none;
+    	}
+
+	}
+}
+
+html, body {
+	height:100%;
+	font-size: 1vw;
+} 
+
+.back {
+	height:100%;
+	width: auto;
+    background-position: center center;
+    background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.54902), rgba(0, 0, 0, 0.54902)), url("../../public/assets/img/hero-bg.jpg");
+
+}
+
+.col-centered {
+	float:none;
+	margin: 0 auto;
+}
+
+.login {
+	position: relative;
+  	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+
+	width: 25%;
+	max-height: 90%;
+	min-width:300px;
+	margin: 0 auto;
+	vertical-align: middle;
+
+	.btn {
+		padding-top: $btn-padding;
+		padding-bottom: $btn-padding;
+		margin-top: 5%;
+		margin-bottom:5%;
+	}
+
+	.btn-sign-in {
+		@include btn-color($color-sign-in);
+		&:hover, &:focus, &:active, &:focus:active, .active {
+			box-shadow: 0 0 10px $color-sign-in;
+		}
+	}
+
+
+	.btn-fb {
+		@include btn-color($color-fb);
+		&:hover, &:focus, &:active, &:focus:active, .active {
+			box-shadow: 0 0 10px $color-fb;
+		}
+		margin-bottom: 1%;
+	}
+
+	.btn-sign-up {
+		@include btn-color($color-sign-up, $type:0);
+	}
+
+	img {
+		margin-bottom: 3%;
+	}
+}
+
+.text-small {
+	font-size: 0.8vw;
+	opacity: 0.7;
+	margin:0;
+
+	a {
+		color:purple;
+	}
+}
+
+
+.form-group {
+	margin-bottom: 5%;
+
+	label {
+		color: purple;
+		opacity: 0.5;
+	}
+}
+
+h2.register, h3.signIn, h3.resetPassword {
+	color: purple;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.glyphicon-remove {
+	color: purple;
+}
+
+p.resetPassword {
+	font-size: 0.9vw;
+}
+
+div.resetPassword {
+	margin: 0 auto;
+}
+
+
+
+
+
+

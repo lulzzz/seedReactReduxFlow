@@ -1,0 +1,85 @@
+.pricing {
+
+	h1.pricing-title {
+		text-align:center;
+		margin-bottom: 5%;
+		color: purple;
+	}
+
+	.horizontal-split-col {
+		margin-bottom: $page-paragraph-margin * 2;
+	}
+
+	.horizontal-split {
+		margin-bottom: -$page-paragraph-margin * 2;
+	}
+
+	.horizontal-split-sm {
+		.horizontal-split-col {
+			padding-right: $horizontal-split-padding-x-sm * 2;
+		}
+	}
+
+	.horizontal-split-md {
+		.horizontal-split-col {
+			padding-right: $horizontal-split-padding-x-md * 2;
+		}
+	}
+
+	.horizontal-split-lg {
+		.horizontal-split-col {
+			padding-right: $horizontal-split-padding-x-lg * 2;
+		}
+	}
+
+	.pricing-plan-name {
+		font-weight: 900;
+		font-size: 1.5rem;
+		padding: 1rem;
+		text-align: center;
+	}
+
+
+	.pricing-plan-price {
+		padding: 1rem;
+	}
+
+	.pricing-plan-price-amount {
+		display: inline-block;
+		font-size: 2rem;
+		font-weight: 900;
+	}
+
+	.pricing-plan-price-period {
+		display: inline-block;
+		font-weight: 300;
+	}
+
+	.pricing-plan-description { 
+		font-weight: 300;
+	}
+
+	p.pricing-plan-action { 
+		margin-bottom: 1rem;
+	}
+
+	.pricing-plan-features {
+		& > ul { margin: 0 }
+	}
+
+	.pricing-plan-feature {
+		font-size: 0.8rem;
+		position: relative;
+		display: block;
+		padding: .5rem 0;
+		margin: 0;
+	}
+
+	&.space {
+		margin-top: 10%;
+	}
+}
+
+li > .glyphicon {
+	margin-right: 5px;
+}

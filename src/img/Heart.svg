@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="94px" height="83px" viewBox="0 0 94 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="1.11022302e-14%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5EA3FF" offset="0%"></stop>
+            <stop stop-color="#A314FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Utils" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-6" transform="translate(-129.000000, -309.000000)" fill="url(#linearGradient-1)">
+            <path d="M176.071965,391.999983 C182.998277,391.975391 223.037242,365.017566 222.999974,336.215688 C222.980456,321.131618 210.782072,308.946817 195.754121,309.000175 C187.960159,309.027847 180.9358,312.341883 175.981893,317.630253 C171.013332,312.382402 163.975421,309.113006 156.175195,309.140701 C141.147244,309.194059 128.980505,321.465368 129.000023,336.549439 C129.037292,365.351317 169.145653,392.024575 176.071965,391.999983 Z" id="Heart"></path>
+        </g>
+    </g>
+</svg>

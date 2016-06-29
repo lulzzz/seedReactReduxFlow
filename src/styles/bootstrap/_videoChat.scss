@@ -1,0 +1,69 @@
+.webrtc {
+
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	margin-top:3%;
+
+	.videoContainer {
+		video {
+			border:1px solid blue;
+			background-size: cover;
+			padding:0;
+			margin:0;
+			width:100%;
+			height:auto;
+		}
+
+	}
+
+	#localVideo {
+		height:20%;
+		width:auto;
+		border:1px solid red;
+
+		position:absolute;
+		top: 0;
+    	left: 0;
+		z-index:2;
+	}
+
+	.connectionstate {
+    	position: absolute;
+    	top: 1%;
+    	width: 100%;
+    	text-align: center;
+    	color: #fff
+	}
+	
+}   
+
+
+.videoControls {
+
+	background-color: lightGrey;
+	border-radius: 20px;
+	padding: 1%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+
+	ul {
+		text-align:center;
+		margin: 0;
+	}
+
+	li {
+		display:inline;
+		margin: 0 5% 0 5%;
+	}
+
+	a {
+		&:hover {
+			cursor: pointer;
+		}
+
+	}
+} 
+

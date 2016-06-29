@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="36px" viewBox="0 0 56 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Cam On</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Utils" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-144.000000, -377.000000)" fill="#FFFFFF">
+            <g id="Cam-On" transform="translate(144.000000, 377.000000)">
+                <rect id="Body" x="0" y="0" width="36" height="36" rx="8"></rect>
+                <polygon id="Lens" points="40 22.7368421 56 36 56 0 40 11.3684211"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

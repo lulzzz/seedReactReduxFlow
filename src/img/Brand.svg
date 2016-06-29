@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="405px" height="134px" viewBox="0 0 405 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Brand</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="134" height="134" rx="33"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="134" height="134" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="50%" y1="1.11022302e-14%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#5EA3FF" offset="0%"></stop>
+            <stop stop-color="#A314FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-6" transform="translate(-28.000000, -198.000000)">
+            <g id="Brand" transform="translate(28.000000, 198.000000)">
+                <text id="Karma" fill="#653094" font-family="SFUIDisplay-Light, SF UI Display" font-size="90" font-weight="300" letter-spacing="1.33333397">
+                    <tspan x="159" y="98">Karma</tspan>
+                </text>
+                <use id="Icon-Frame" stroke="#DFDFDF" mask="url(#mask-2)" stroke-width="8" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M67.1960932,105.189984 C73.5344406,105.167453 110.174555,80.468564 110.14045,54.0801446 C110.122589,40.2600466 98.9597084,29.0962737 85.207459,29.1451599 C78.075115,29.1705139 71.6470442,32.2068493 67.1136673,37.0520792 C62.5668798,32.2439732 56.1264074,29.2485368 48.9883311,29.2739111 C35.2360817,29.3227974 24.1021602,40.5658307 24.1200215,54.3859287 C24.1541262,80.7743481 60.8577458,105.212516 67.1960932,105.189984 Z" id="Heart" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
