@@ -1,0 +1,199 @@
+/* START Consultation page*/
+.row.consultationPage {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* Video */
+.col-md-9.video
+{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.video .hangup
+{
+  left: 2%;
+  top: 2%;
+  background-color: red;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  font-size: 3em;
+  z-index: 2;
+  border-radius: 70px;
+  text-align: center;
+  padding-top: 6px;
+}
+.video .videoA
+{
+  position: relative;
+}
+.video .videoA img
+{
+  height: 1368px;
+  width: 100%;
+}
+.video .videoB 
+{
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.video .videoB img
+{
+}
+/* START Chat */
+.col-md-3.chat {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* START Chat top */
+.row.chatTop {
+  margin: 0px;
+  background-color: #D3D4CE;
+  width: 100%;
+  height: 20%;
+  top: 0px;
+  position: fixed;
+}
+.chatTop .presentation
+{
+  padding-left: 2%;
+  padding-top: 2%;
+}
+.chatTop img
+{
+  height: 130px;
+  width: 130px;
+}
+/* END Chat top */
+/* START Chat core */
+.row.chatCore {
+  margin-right: 0px;
+  margin-left: 0px;
+  max-height: 70%;
+  width: inherit;
+  top: 20%;
+  position: fixed;
+}
+.chatCore .container
+{
+  padding: 0px;
+}
+.chatCore .container ul li {
+  width: 30%;
+  height: 70px;
+}
+.chatCore .container ul a {
+  height: 70px;
+  font-size: 2em;
+  text-align: center;
+}
+.chatCore .row.message {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+.chatCore .message .bubble 
+{
+  position: relative;
+  width: 35%;
+  min-height: 67px;
+  background: #F5F5F5;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+}
+.chatCore .message .bubble.left
+{
+  margin-top: 20px;
+  margin-left: 14%;
+}
+.chatCore .message .bubble.right
+{
+  margin-top: 20px;
+  margin-left: 12%;
+}
+.chatCore .message .bubble.left:before 
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 30px 17px 0;
+  border-color: transparent #F5F5F5;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -28px;
+  top: 19px;
+}
+.chatCore .message .bubble.right:after  
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 0 17px 30px;
+  border-color: transparent #F5F5F5;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -28px;
+  top: 19px;
+}
+.chatCore .message .bubble p
+{
+  color: #524140;
+  font-size: 30px;
+  padding-left: 16px;
+  padding-top: 5px;
+
+}
+.chatCore .message img.profilPicDoc 
+{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 4%;
+}
+.chatCore .message img.profilPicPatient 
+{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 4%;
+}
+/* END Chat core */
+/* START Chat footer */
+.row.chatFooter 
+{
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: #CDCDC6;
+  width: 100%;
+  bottom: 0px;
+  height: 10%;
+  position: fixed;
+}
+.chatFooter .texte
+{
+  display: inline-block;  
+  width: 23%;
+}
+.chatFooter .form-control
+{
+}
+.chatFooter .sendmessage
+{
+  width: 100px;
+  heigh: 100px;
+  border-radius: 100px;
+  top: 1%;
+  color: green;
+  font-size: 2em;
+  display: inline-block; 
+}
+/* END Chat footer */
+/* END Chat */
+/* END Consultation page */
